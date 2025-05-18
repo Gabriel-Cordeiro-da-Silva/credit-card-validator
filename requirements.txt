@@ -1,0 +1,5 @@
+"""
+pacotes Python necessários para o funcionamento do projeto
+"""
+Flask==2.2.2
+Werkzeug==2.2.2 

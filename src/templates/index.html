@@ -1,0 +1,26 @@
+<!-- Estrutura da página principal do validador de bandeiras de cartão de crédito. -->
+<!DOCTYPE html> <!-- Declaração do tipo de documento HTML5 -->
+<html lang="pt-BR"> <!-- Define o idioma da página como português do Brasil -->
+<head> <!-- Cabeçalho da página -->
+    <meta charset="UTF-8"> <!-- Define a codificação de caracteres -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Configura a visualização para dispositivos móveis -->
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}"> <!-- Link para o arquivo CSS de estilo -->
+    <title>Validador de Cartão de Crédito</title> <!-- Título da página -->
+</head> 
+<body> <!-- Corpo da página -->
+    <div class="container"> <!-- Div principal para centralizar o conteúdo -->
+        <h1>Validador de Bandeiras de Cartão de Crédito</h1> <!-- Título principal -->
+        <form action="/" method="post"> <!-- Formulário para enviar o número do cartão -->
+            <label for="numero_cartao">Número do Cartão de Crédito:</label> <!-- Rótulo para o campo de entrada -->
+            <input type="text" id="numero_cartao" name="numero_cartao" required> <!-- Campo de entrada para o número do cartão, obrigatório -->
+            <button type="submit">Validar</button> <!-- Botão para enviar o formulário -->
+        </form> 
+        {% if resultado %}
+            <div class="resultado"> <!-- Div para exibir o resultado da validação -->
+                <h2>Resultado da Validação:</h2> 
+                <p>{{ resultado }}</p> <!-- Exibe o resultado da validação -->
+            </div>
+        {% endif %}
+    </div>
+</body>
+</html>

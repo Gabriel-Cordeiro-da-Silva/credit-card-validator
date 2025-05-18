@@ -1,0 +1,35 @@
+/* Este trecho de CSS define o visual básico da página.*/
+body {
+    font-family: Arial, sans-serif; /* Define a fonte padrão */
+    line-height: 1.6; /* Define o espaçamento entre linhas */
+    background-color: #f4f4f4; /* Cor de fundo da página */
+    margin: 0; /* Remove margens padrão */
+    padding: 20px; /* Adiciona espaçamento interno */
+}
+/* h1 define a cor do título principal */
+h1 {
+    color: #333;
+}
+/* Estilo do formulário (caixa de seleção)*/
+form {
+    background: #fff; /* Cor de fundo do formulário */
+    padding: 20px; /* Espaçamento interno do formulário */
+    border-radius: 5px; /* Bordas arredondadas */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Sombra para dar profundidade */
+}
+/* área de input (dados do cartão) */
+input[type="text"] { 
+    width: 100%; /* Largura total do campo de texto */
+    padding: 10px; /* Espaçamento interno do campo */
+    margin: 10px 0; /* Margem acima e abaixo do campo */
+    border: 1px solid #ccc; /* Cor da borda */
+    border-radius: 4px; /* Bordas arredondadas */
+}
+/* .result estiliza a área onde o resultado é exibido*/
+.result {
+    margin-top: 20px; /* Espaçamento acima do resultado */
+    padding: 10px; /* Espaçamento interno do resultado */
+    border: 1px solid #ccc; /* Cor da borda do resultado */
+    border-radius: 4px; /* Bordas arredondadas */
+    background-color: #e9ecef; /* Cor de fundo do resultado */
+}
