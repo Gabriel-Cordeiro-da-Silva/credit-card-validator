@@ -30,7 +30,7 @@ credit-card-validator
 
 1. Clone o repositório:
    ```
-   git clone <URL_DO_REPOSITORIO>
+   git clone https://github.com/Gabriel-Cordeiro-da-Silva/credit-card-validator.git
    cd credit-card-validator
    ```
 
